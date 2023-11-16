@@ -2,6 +2,36 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { Button } from "@/components/ui/button"
 import { BookText } from 'lucide-react';
+import type { Metadata } from 'next'
+
+export const metadata: Metadata = {
+  title: 'Nothing Finance',
+  description: 'Crowdfund your next Dapp!',
+  metadataBase: new URL('https://www.nothingfinance.com'),
+  openGraph: {
+    title: 'Nothing Finance',
+    description: 'Crowdfund your next Dapp!',
+    url: 'https://www.nothingfinance.com',
+    siteName: 'Nothing Finance',
+    images: [
+      {
+        url: '/nothingfinance.png',
+        width: 1200,
+        height: 630,
+        alt: 'og-image',
+      },
+    ],
+    locale: 'en_US',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Nothing Finance',
+    description: 'Crowdfund your next Dapp!',
+    creator: '@zxstim',
+    images: ['/nothingfinance-tbn.png'],
+  },
+}
 
 export default function Home() {
   return (
