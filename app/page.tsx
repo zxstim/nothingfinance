@@ -36,7 +36,7 @@ export const metadata: Metadata = {
 export default function Home() {
   return (
     <>
-      <div className="flex flex-col gap-12 items-center justify-center h-screen">
+      <div className="flex flex-col gap-12 items-center justify-center text-center h-screen">
         <Image
           className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
           src="/nothingfinance-logo.svg"
